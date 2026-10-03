@@ -1,0 +1,17 @@
+{
+  "name": "iosdemo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An iOS 26 style phone with a liquid glass look, in the browser (fan-made interface concept, not affiliated with Apple)",
+  "author": "ALEXalesha",
+  "license": "MIT",
+  "homepage": "https://alexalesha.github.io/iOSDemo/",
+  "repository": { "type": "git", "url": "git+https://github.com/ALEXalesha/iOSDemo.git" },
+  "scripts": {
+    "test": "playwright test",
+    "screenshots": "node tools/screenshots.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}
