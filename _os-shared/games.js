@@ -1,19 +1,22 @@
-// Игры «Хаба» для оболочек-ОС (win11_3, macos-tahoe): одна таблица на все системы.
-// Окно игры открывает соседнюю папку репозитория (../<dir>/index.html) - полную версию игры,
-// поэтому после слияния веток здесь ничего править не нужно: пути те же, содержимое новое.
-// Названия приходят из самих игр: <meta name="application-name"> (скрипт build-games.js переписывает их здесь).
+// Игры для оболочек этого репозитория (отдельная публикация на GitHub).
+// В сборнике GameRoom игры лежат в соседних папках. Здесь каждая игра - свой репозиторий:
+// окно открывает '../' + dir + '/index.html', то есть на GitHub Pages
+// (alexalesha.github.io/<репозиторий>/<оболочка>/) - соседний репозиторий этого же сайта,
+// например https://alexalesha.github.io/AlexMine/. У себя положите клоны игр рядом с папкой
+// этого репозитория: AlexMine, BlockCity, OperationPerimeter, HorizonDrift, DinoRun, JumpJump,
+// HotJungle, SpaceGun, FallingBlocks, SudokuGame.
 // Цвета и знак - для своего значка в духе системы.
 window.OS_GAMES = [
-  { id: 'cubes', dir: 'minecraft_clone_3d_1', title: 'Кубический мир', colors: ['#7ccf5a', '#3e8a2f'], glyph: 'cube' },
-  { id: 'blox', dir: 'roblox-mini', title: 'Блоксити', colors: ['#5aa9ff', '#2a5bd7'], glyph: 'figure' },
-  { id: 'perimeter', dir: 'fps_1', title: 'Операция: Периметр', colors: ['#8a9199', '#3b4148'], glyph: 'sight' },
-  { id: 'drift', dir: 'horizon_drift_offline', title: 'Horizon Drift', colors: ['#ff8a4c', '#d6336c'], glyph: 'car' },
-  { id: 'dino', dir: 'dino', title: 'Дино-бег', colors: ['#d9d9d9', '#8f8f8f'], glyph: 'dino' },
-  { id: 'jumper', dir: 'mario', title: 'Прыг-скок', colors: ['#ff6b5a', '#c0392b'], glyph: 'star' },
-  { id: 'jungle', dir: 'jungle-strike', title: 'Огненные джунгли', colors: ['#6fcf7f', '#1e7a3c'], glyph: 'leaf' },
-  { id: 'space', dir: 'space_shooter', title: 'Космический стрелок', colors: ['#7b6cff', '#231a5c'], glyph: 'rocket' },
-  { id: 'blocks', dir: 'tetris', title: 'Блоки', colors: ['#ffb347', '#e0672a'], glyph: 'blocks' },
-  { id: 'sudoku', dir: 'sudoku', title: 'Судоку', colors: ['#5ec8c8', '#1f7a8c'], glyph: 'grid9' },
+  { id: 'cubes', dir: '../AlexMine', title: 'Кубический мир', colors: ['#7ccf5a', '#3e8a2f'], glyph: 'cube' },
+  { id: 'blox', dir: '../BlockCity', title: 'Блоксити', colors: ['#5aa9ff', '#2a5bd7'], glyph: 'figure' },
+  { id: 'perimeter', dir: '../OperationPerimeter', title: 'Операция: Периметр', colors: ['#8a9199', '#3b4148'], glyph: 'sight' },
+  { id: 'drift', dir: '../HorizonDrift', title: 'Horizon Drift', colors: ['#ff8a4c', '#d6336c'], glyph: 'car' },
+  { id: 'dino', dir: '../DinoRun', title: 'Дино-бег', colors: ['#d9d9d9', '#8f8f8f'], glyph: 'dino' },
+  { id: 'jumper', dir: '../JumpJump', title: 'Прыг-скок', colors: ['#ff6b5a', '#c0392b'], glyph: 'star' },
+  { id: 'jungle', dir: '../HotJungle', title: 'Огненные джунгли', colors: ['#6fcf7f', '#1e7a3c'], glyph: 'leaf' },
+  { id: 'space', dir: '../SpaceGun', title: 'Космический стрелок', colors: ['#7b6cff', '#231a5c'], glyph: 'rocket' },
+  { id: 'blocks', dir: '../FallingBlocks', title: 'Блоки', colors: ['#ffb347', '#e0672a'], glyph: 'blocks' },
+  { id: 'sudoku', dir: '../SudokuGame', title: 'Судоку', colors: ['#5ec8c8', '#1f7a8c'], glyph: 'grid9' },
 ];
 // Белые знаки для значков игр (viewBox 0 0 48 48, центр 24,24)
 window.OS_GAME_GLYPHS = {
